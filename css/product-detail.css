@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+.btn-link {
+    padding: 0;
+    text-decoration: none;
+}
+
+.badge {
+    font-size: 14px;
+    padding: 8px;
+}
