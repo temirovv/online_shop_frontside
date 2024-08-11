@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('product_id');
-    const apiUrl = `http://localhost:8000/product-detail/${productId}`;  // Adjust the URL to fetch the specific product
+    const apiUrl = `http://77.232.131.69/api/product-detail/${productId}`;  // Adjust the URL to fetch the specific product
 
     fetch(apiUrl)
         .then(response => response.json())
