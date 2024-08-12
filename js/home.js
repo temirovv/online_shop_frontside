@@ -2,9 +2,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // const telegram_user = window.Telegram.WebApp;
     // const user_id = telegram_user.user.id;
     
+    document.getElementById('loader').style.display = 'block';
+
 
     // The URL of your API endpoint
     const apiURL = 'https://temirovv.uz/api/products';
+
+
+    window.onload = function() {
+        // Hide the loader once the page is fully loaded
+        document.getElementById('loader').style.display = 'none';
+    };
 
     // Function to fetch products from the API
     async function fetchProducts() {
@@ -14,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
             displayProducts(products);
         } catch (error) {
             console.error('Error fetching products:', error);
+        }
+        finally {
+            document.getElementById('loader').style.display = 'none';
         }
     }
 
