@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // The URL of your API endpoint
-    const apiURL = 'https://77.232.131.69/api/products';
+    const apiURL = 'https://temirovv.uz/api/products';
 
     // Function to fetch products from the API
     async function fetchProducts() {

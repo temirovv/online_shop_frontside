@@ -3,10 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // const user_id = telegram_user.user.id;
     
     document.getElementById('loader').style.display = 'block';
-
+    const TG = window.Telegram.WebApp
+    const user_id = TG.initDataUnsafe.user.id
 
     // The URL of your API endpoint
-    const apiURL = 'https://temirovv.uz/api/products';
+    const apiURL = `https://temirovv.uz/api/products?${telegram_user_id=user_id}`;
 
 
     window.onload = function() {
